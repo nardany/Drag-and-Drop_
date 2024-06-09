@@ -1,0 +1,60 @@
+.app {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 200px;
+  background-color: #f4f4f4;
+  border-left: 1px solid #ddd;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.sidebar-item {
+  margin: 10px 0;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  cursor: pointer;
+}
+
+.editor {
+  flex-grow: 1;
+  padding: 20px;
+  border-right: 1px solid #ddd;
+  box-sizing: border-box;
+  width:850px;
+}
+
+.editor-item {
+  margin: 10px 0;
+  padding: 10px;
+  background-color: #e3e3e3;
+  border: 1px solid #ddd;
+  cursor: move;
+  position: relative;
+}
+
+.removeBtn {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.editor-item button:hover {
+  background-color: darkred;
+}
+
+.drop-zone {
+  padding: 10px;
+  margin: 10px 0;
+  background-color: #f0f0f0;
+  border: 2px dashed #ddd;
+  text-align: center;
+}
